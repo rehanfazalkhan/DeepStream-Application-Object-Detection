@@ -1,32 +1,35 @@
-# DeepStream-Application-Object-Detection
+## DeepStream-Application-Object-Detection
 
-#setup 
-DeepStream Application - Local Setup and Execution
-Introduction
-This document provides a step-by-step guide on how to create and execute the DeepStream application for object detection in videos on your local system. The application utilizes YOLOv5 for inference and processes the video to detect various objects.
+##setup 
+#DeepStream Application - Local Setup and Execution
+#Introduction
+##This document provides a step-by-step guide on how to create and execute the DeepStream application for object detection in videos on ##your local system. The application utilizes YOLOv5 for inference and processes the video to detect various objects.
 
-Prerequisites
-Before proceeding, make sure you have the following prerequisites in place:
+#Prerequisites
+##Before proceeding, make sure you have the following prerequisites in place:
 
-Python: Python should be installed on your system.
-Video File: Prepare the video file that you want to process with the DeepStream application.
-YOLOv5 Model: Make sure you have the YOLOv5 model file (e.g., yolov5s.pt) in the same directory as the application script.
-Step-by-Step Guide
-Step 1: Clone the Repository
-Clone the repository containing the DeepStream application code to your local machine. The repository should include the following files:
+##Python: Python should be installed on your system.
+V##ideo File: Prepare the video file that you want to process with the DeepStream application.
+##YOLOv5 Model: Make sure you have the YOLOv5 model file (e.g., yolov5s.pt) in the same directory as the application script.
+##Step-by-Step Guide
 
-deepstream_app.py: The DeepStream application code.
-Step 2: Install Dependencies
-Install the required Python packages by running the following command in your terminal:
+#Step 1: Clone the Repository
+##Clone the repository containing the DeepStream application code to your local machine. The repository should include the following files:
 
-bash
-Copy code
-pip install torch torchvision opencv-python-headless
-Step 3: Modify Class Labels (Optional)
-If you wish to use custom class labels for object detection, open the deepstream_app.py file using a text editor and make changes to the class_labels list.
+##deepstream_app.py: The DeepStream application code.
 
-Step 4: Prepare Input Video and Output Directory
-Place the video you want to process in a directory on your local machine. Additionally, create a directory where you want the processed output video to be saved.
+#Step 2: Install Dependencies
+##Install the required Python packages by running the following command in your terminal:
+
+#bash
+##Copy code
+##pip install torch torchvision opencv-python-headless
+
+#Step 3: Modify Class Labels (Optional)
+##If you wish to use custom class labels for object detection, open the deepstream_app.py file using a text editor and make changes to the ##class_labels list.
+
+#Step 4: Prepare Input Video and Output Directory
+##Place the video you want to process in a directory on your local machine. Additionally, create a directory where you want the processed ##output video to be saved.
 
 Step 5: Run the DeepStream Application
 In the terminal, navigate to the project directory containing deepstream_app.py, and execute the following command:
